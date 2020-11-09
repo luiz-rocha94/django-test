@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>UNES - Contato</title>
+</head>
+<body background="{% static 'polls/fundo2.png' %}">
+    <table border="0" width="900" align="center">
+        <tr>
+            <td height="89"><img src="{% static 'polls/logo.png' %}"></td>
+            <td align="right">
+                <a href="home">Home</a> |
+                <a href="quem-somos">Quem somos</a> |
+                <a href="contato">Contato</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="{% static 'capa.png' %}">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>Entre em contato</h2>
+                <p>
+                    Lorem <strong>ipsum dolor</strong> sit <em>amet</em>, consectetur adipiscing elit. Donec aliquet
+                    bibendum neque. Sed purus augue, rhoncus egestas ullamcorper in, vehicula at arcu.
+                </p>
+                <hr>
+                <form method="post" action="{% url 'contato' %}">
+                    {% csrf_token %}
+                    Seu e-mai:<br>
+                    <input type="text" name="email"><br>
+
+                    Assunto:<br>
+                    <input type="text" name="assunto"><br>
+
+                    Descrição:<br>
+                    <textarea name="descricao"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <h4>Todos os direitos reservados</h4>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
