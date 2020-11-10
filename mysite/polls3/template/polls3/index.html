@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TecBlog - O seu Blog de tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls3/css/estilo.css' %}">
 </head>
 <body>
+    <div id="area-cabecalho">
+        <div id="area-logo">
+            <h1>Tec<span class="branco">Blog</span></h1>
+        </div>
+        <div id="area-menu">
+            <a href="">Home</a>
+            <a href="">Jogos</a>
+            <a href="">Celulares</a>
+            <a href="">Informática</a>
+            <a href="">Eletrônicos</a>
+        </div>
+    </div>
+    <div id="area-principal">
+        <div id="area-postagens">
+            <div class="postagem">
+                <h2>Titulo da postagem 1</h2>
+                <span class="data-postagem">postado 20 março 2022</span>
+                <img src="{% static 'polls3/imagem1.jpg' %}" width="620px">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce turpis erat, mollis id molestie eget,
+                    aliquam vitae enim. Morbi varius, velit quis tincidunt facilisis, augue augue porta ante, et mollis
+                    orci diam sit amet dolor. Nam consequat justo fermentum blandit tempus. Aliquam vitae fringilla
+                    tortor. Nullam consectetur, turpis non pulvinar commodo, nisl est blandit ipsum, vitae cursus ipsum
+                    tellus vel metus. Aenean vulputate risus nisi, cursus pellentesque enim feugiat id. Phasellus
+                    blandit, lacus a consectetur ornare, dolor enim suscipit eros, a sollicitudin arcu nulla at arcu.
+                    Mauris ornare dolor eget ligula euismod, sit amet porta quam bibendum. Sed rhoncus mauris eu tellus
+                    mollis, non aliquam turpis molestie.
+                </p>
+                <a href="">Leia mais</a>
+            </div>
 
+            <div class="postagem">
+                <h2>Titulo da postagem 1</h2>
+                <span class="data-postagem">postado 2 março 2022</span>
+                <img src="{% static 'polls3/imagem2.jpg' %}" width="620px">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce turpis erat, mollis id molestie eget,
+                    aliquam vitae enim. Morbi varius, velit quis tincidunt facilisis, augue augue porta ante, et mollis
+                    orci diam sit amet dolor. Nam consequat justo fermentum blandit tempus. Aliquam vitae fringilla
+                    tortor. Nullam consectetur, turpis non pulvinar commodo, nisl est blandit ipsum, vitae cursus ipsum
+                    tellus vel metus. Aenean vulputate risus nisi, cursus pellentesque enim feugiat id. Phasellus
+                    blandit, lacus a consectetur ornare, dolor enim suscipit eros, a sollicitudin arcu nulla at arcu.
+                    Mauris ornare dolor eget ligula euismod, sit amet porta quam bibendum. Sed rhoncus mauris eu tellus
+                    mollis, non aliquam turpis molestie.
+                </p>
+                <a href="">Leia mais</a>
+            </div>
+        </div>
+        <div id="area-lateral">
+            <div class="conteudo-lateral">
+                <h3>Postagens recentes</h3>
+                <div class="postagem-lateral">
+                    <p>
+                        Vestibulum tempor nisi vel tortor varius sollicitudin. Ut nec massa enim. Integer accumsan urna
+                        in massa eleifend, efficitur gravida odio semper. Integer mattis non sem ut mollis. Nulla porta
+                        felis justo, tempor interdum lectus iaculis a
+                    </p>
+                    <a href="">Leia mais</a>
+                </div>
+                <div class="postagem-lateral">
+                    <p>
+                        Vestibulum tempor nisi vel tortor varius sollicitudin. Ut nec massa enim. Integer accumsan urna
+                        in massa eleifend, efficitur gravida odio semper. Integer mattis non sem ut mollis. Nulla porta
+                        felis justo, tempor interdum lectus iaculis a
+                    </p>
+                    <a href="">Leia mais</a>
+                </div>
+            </div>
+            <div class="conteudo-lateral">
+                <h3>Categorias</h3>
+                <a href="">Home</a><br>
+                <a href="">Jogos</a><br>
+                <a href="">Celulares</a><br>
+                <a href="">Informática</a><br>
+                <a href="">Eletrônicos</a>
+            </div>
+        </div>
+        <div id="rodape">
+            Todos os direitos reservados.
+        </div>
+    </div>
 </body>
 </html>
