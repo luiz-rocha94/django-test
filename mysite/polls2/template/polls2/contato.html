@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Anna Bella Contato</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls2/estilo.css' %}">
+</head>
+<body>
+    <div id="principal">
+        <img src="{% static 'polls2/capa.png' %}">
+        <div id="menu">
+           <a href="home">HOME</a> |
+            <a href="biografia">BIOGRAFIA</a> |
+            <a href="campanhas-publicitarias">CAMPANHAS PUBLICITÁRIAS</a> |
+            <a href="contato">CONTATO</a>
+        </div>
+        <div id="conteudo"><!-- comentário -->
+            <h1>Contato</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla mollis sapien, ac viverra ipsum
+                consectetur in. Praesent ac nisi quam. Mauris non libero tellus. Aliquam lorem tellus, efficitur a
+                justo quis, pharetra viverra sapien. In fermentum, felis vel efficitur lobortis, lectus massa varius
+                lorem, quis dictum mauris sapien id massa. Proin tempus rhoncus sodales. Fusce pharetra dui risus, eget
+                efficitur mauris tempus sed.
+            </p>
+            <img src="{% static 'polls2/foto3.png' %}" class="img-campanha">
+            <div>
+                <strong>e-mail:</strong> contato@annabella.com.br<br>
+                <strong>telefone:</strong> (11) 9978-6589
+            </div>
+        </div>
+        <div id="rodape">
+            <h4 class="centralizar">Todos os direitos reservados</h4>
+        </div>
+    </div>
+</body>
+</html>

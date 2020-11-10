@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls',
     'polls2',
+    'polls3',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'polls', 'template'),
-                 os.path.join(BASE_DIR, 'polls2', 'template')],
+                 os.path.join(BASE_DIR, 'polls2', 'template'),
+                 os.path.join(BASE_DIR, 'polls3', 'template'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
