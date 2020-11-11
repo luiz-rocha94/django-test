@@ -22,4 +22,5 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('polls2/', include('polls2.urls')),
     path('polls3/', include('polls3.urls')),
+    path('polls4/', include('polls4.urls')),
 ]
