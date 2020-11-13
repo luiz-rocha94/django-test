@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Chalé Hotel</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls5/css/estilo.css' %}">
+</head>
+<body>
+    <div id="container"><!-- inicio container -->
+        <div id="topo"><!-- inicio topo -->
+            <div id="area-logo">
+                <h1 class="logo">
+                    <a href="">Chalé Hotel</a>
+                </h1>
+            </div>
+            <div id="area-menu">
+                <div id="conteudo-menu">
+                    <div id="menu-locais">
+                        <span class="locais">
+                            Rio de Janeiro - São Paulo - Belo Horizonte
+                        </span>
+                        <a class="reserva" href="">Reservar</a>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div id="menu">
+                        <ul id="navegacao">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">História</a></li>
+                            <li><a href="">Imprensa</a></li>
+                            <li><a href="">Gastronomia</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ul>
+                        <img class="depoimento" src="{% static 'polls5/depoimento.png'%}">
+                    </div>
+                </div>
+            </div>
+        </div><!-- fim topo -->
+        <div id="area-principal"><!-- area principal -->
+            <div class="conteudo">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                    Consectetur adipiscing elit. Integer dapibus quam id tortor bibendum lobortis. Maecenas purus orci,
+                    egestas vitae rhoncus nec, tempus nec enim. Etiam efficitur tincidunt tellus eget dignissim. Ut nec
+                    viverra augue. Quisque euismod sollicitudin quam, vel bibendum nunc ornare ornare. Vivamus
+                    pellentesque, sem ac porta pretium, turpis augue tincidunt dui, in pretium velit elit vitae lacus.
+                    Suspendisse quis nisi nisi. Morbi a diam vehicula, posuere magna et, varius ipsum. Integer id nulla
+                    nisi. Aenean eleifend, nibh nec interdum consequat, massa ipsum sodales felis, nec feugiat leo ex
+                    vitae odio. Sed in laoreet felis, at malesuada leo. Phasellus tempor augue neque, non dictum ex
+                    ultricies ac. Integer consectetur consectetur magna a tempus. Cras in laoreet turpis. Cras nunc
+                    elit, lobortis vitae lacus vitae, vulputate mollis velit.
+                </p>
+            </div>
+        </div><!-- area principal -->
+        <div id="area-lateral"><!-- area lateral -->
+            <div class="conteudo">
+                <ul id="beneficios">
+                    <li>
+                        <a href="">
+                            <img src="{% static 'polls5/apartamento.jpg' %}" width="150" alt="apartamento">
+                            <h3>Apartamento</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod imperdiet felis, id
+                                convallis orci. Mauris et rutrum nulla, a lacinia justo.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{% static 'polls5/restaurante.jpg' %}" width="150" alt="restaurante">
+                            <h3>Restaurante</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod imperdiet felis, id
+                                convallis orci. Mauris et rutrum nulla, a lacinia justo.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{% static 'polls5/piscina.jpg' %}" width="150" alt="piscina">
+                            <h3>Piscina</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod imperdiet felis, id
+                                convallis orci. Mauris et rutrum nulla, a lacinia justo.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- area principal -->
+        <div id="rodape">
+            <span>&copy Copyright 2000-2018 Chalé Hotel</span>
+        </div>
+    </div><!-- fim container -->
+</body>
+</html>

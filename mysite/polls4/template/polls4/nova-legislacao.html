@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Notícias cidade - Seu site de notícias</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls4/css/estilo.css' %}">
+</head>
+<body id="uma-coluna" class="home">
+    <div id="container">
+        <div id="topo">
+            <h1 class="logo">Notícias cidade</h1>
+            <ul id="navegacao">
+                <li class="primeiro"><a id="home" href="home">Home</a></li>
+                <li><a id="brasil" href="brasil">Brasil</a></li>
+                <li><a id="internacional" href="">Internacional</a></li>
+                <li><a id="economia" href="">Economia</a></li>
+                <li><a id="saude" href="">Saúde</a></li>
+                <li><a id="ciencia" href="">Ciência</a></li>
+                <li><a id="fotos" href="fotos">Fotos</a></li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <div id="primario">
+                <div class="caixa destaque">
+                    <h2>Destaque</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Nova legislação</h3>
+                        <img class="image-principal" src="{% static 'polls4/taxi.jpg' %}" width="100%">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus quam id tortor
+                            bibendum lobortis. Maecenas purus orci, egestas vitae rhoncus nec, tempus nec enim. Etiam
+                            efficitur tincidunt tellus eget dignissim. Ut nec viverra augue. Quisque euismod
+                            sollicitudin quam, vel bibendum nunc ornare ornare. Vivamus pellentesque, sem ac porta
+                            pretium, turpis augue tincidunt dui, in pretium velit elit vitae lacus. Suspendisse quis
+                            nisi nisi. Morbi a diam vehicula, posuere magna et, varius ipsum. Integer id nulla nisi.
+                            Aenean eleifend, nibh nec interdum consequat, massa ipsum sodales felis, nec feugiat leo ex
+                            vitae odio. Sed in laoreet felis, at malesuada leo. Phasellus tempor augue neque, non dictum
+                            ex ultricies ac. Integer consectetur consectetur magna a tempus. Cras in laoreet turpis.
+                            Cras nunc elit, lobortis vitae lacus vitae, vulputate mollis velit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-rodape" style="clear: both">
+        <div id="rodape">
+            &copy; Copyright 2000-2018 Notícias cidade
+        </div>
+    </div>
+</body>
+</html>

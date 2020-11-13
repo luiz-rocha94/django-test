@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'polls2',
     'polls3',
     'polls4',
+    'polls5',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +64,7 @@ TEMPLATES = [
                  os.path.join(BASE_DIR, 'polls2', 'template'),
                  os.path.join(BASE_DIR, 'polls3', 'template'),
                  os.path.join(BASE_DIR, 'polls4', 'template'),
+                 os.path.join(BASE_DIR, 'polls5', 'template'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,3 +129,30 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+"""
+STATIC_ROOT = 'C:/static'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_TIMEZONE = timezone('America/Sao_Paulo')
+DJANGO_CELERY_RESULTS_TASK_ID_MAX_LENGTH = 5000
+CELERY_BEAT_SCHEDULE = {
+    'task-name': {
+        'task': 'task',
+        schedule': crontab(minute='*/5'),
+        'args': (, ),
+        'kwargs': {},
+        'options':{'time_limit':100, 'expires':100}
+    },
+}
+"""
