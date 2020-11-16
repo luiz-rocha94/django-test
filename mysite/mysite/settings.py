@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'polls4',
     'polls5',
     'polls6',
+    'polls7',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,7 @@ TEMPLATES = [
                  os.path.join(BASE_DIR, 'polls4', 'template'),
                  os.path.join(BASE_DIR, 'polls5', 'template'),
                  os.path.join(BASE_DIR, 'polls6', 'template'),
+                 os.path.join(BASE_DIR, 'polls7', 'template'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
